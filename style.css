@@ -281,12 +281,37 @@ body {
 }
 .info-users__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-left: 10px;
     margin-right: 25px;
     position: relative;
 }
-.info-users__item::before {
+.info-users__icons-1 {
+    display: none;
+}
+.info-users__icons-2 {
+    display: none;
+}
+.info-users__icons-3 {
+    display: none;
+}
+.info-users__icon-1 {
+    content: '';
+    position: absolute;
+    right: -26px;
+    bottom: 15px;
+    width: 37px;
+    height: 36px;
+    background: #17BB30;
+    border-radius: 10px 0 0 10px;
+}
+.info-users__icon-2 {
+    content: url('./img/Vector25.png');
+    position: absolute;
+    right: -4%;
+    bottom: 37%;
+}
+/* .info-users__item::before {
     content: '';
     position: absolute;
     right: -26px;
@@ -303,7 +328,7 @@ body {
     right: -4%;
     bottom: 37%;
     opacity: 0;
-}
+} */
 .info-users__item:first-child {
     margin-top: 20px;
 }
@@ -357,11 +382,12 @@ body {
     color: #8D8CB2;
     padding-top: 5px;
 }
-.info-users__btn {
+.info-users__btn-1 {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
-.info-users__btn button {
+.info-users__btn-1 button {
     width: 82px;
     height: 35px;
     background: #EAECF9;
@@ -372,9 +398,43 @@ body {
     border: none;
     outline: none;
 }
-.info-users__right-items {
+.info-users__btn-2 {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.info-users__btn-2 button {
+    width: 82px;
+    height: 35px;
+    background: #EAECF9;
+    color: #393778;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    border: none;
+    outline: none;
+}
+.info-users__btn-3 {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.info-users__btn-3 button {
+    width: 82px;
+    height: 35px;
+    background: #EAECF9;
+    color: #393778;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    border: none;
+    outline: none;
+}
+.info-users__right-items-1,
+.info-users__right-items-2,
+.info-users__right-items-3  {
     background: linear-gradient(45deg, #0098D0,#0DB832,#E9F200 );
-    opacity: 0;
+    display: none;
 }
 .options-right input:nth-child(2n) {
     margin: 10px 0;
@@ -976,8 +1036,14 @@ input:checked + .slider:before {
     display: none;
 }
 
-.info-users__right-items.active {
-    opacity: 1;
+.info-users__right-items-1.active {
+    display: block;
+}
+.info-users__right-items-2.active {
+    display: block;
+}
+.info-users__right-items-3.active {
+    display: block;
 }
 #modal-small__vladivostok.open {
     display: block !important;

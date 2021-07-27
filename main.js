@@ -1,11 +1,35 @@
 $(".user-1").click(function () {
-    $(".info-users__right-items").toggleClass("active")
+    $(".info-users__right-items-1").addClass("active")
+    $(".info-users__right-items-2").removeClass("active")
+    $(".info-users__right-items-3").removeClass("active")
+    $(".user-1").css({"display" : "none"})
+    $(".user-2").css({"display" : "block"})
+    $(".user-3").css({"display" : "block"})
+    $(".info-users__icons-1").css({"display" : "block"})
+    $(".info-users__icons-2").css({"display" : "none"})
+    $(".info-users__icons-3").css({"display" : "none"})
 });
 $(".user-2").click(function () {
-    $(".info-users__right-items").toggleClass("active")
+    $(".info-users__right-items-1").removeClass("active")
+    $(".info-users__right-items-2").addClass("active")
+    $(".info-users__right-items-3").removeClass("active")
+    $(".user-1").css({"display" : "block"})
+    $(".user-2").css({"display" : "none"})
+    $(".user-3").css({"display" : "block"})
+    $(".info-users__icons-1").css({"display" : "none"})
+    $(".info-users__icons-2").css({"display" : "block"})
+    $(".info-users__icons-3").css({"display" : "none"})
 });
 $(".user-3").click(function () {
-    $(".info-users__right-items").toggleClass("active")
+    $(".info-users__right-items-1").removeClass("active")
+    $(".info-users__right-items-2").removeClass("active")
+    $(".info-users__right-items-3").addClass("active")
+    $(".user-1").css({"display" : "block"})
+    $(".user-2").css({"display" : "block"})
+    $(".user-3").css({"display" : "none"})
+    $(".info-users__icons-1").css({"display" : "none"})
+    $(".info-users__icons-2").css({"display" : "none"})
+    $(".info-users__icons-3").css({"display" : "block"})
 });
 
 $("#vladivostok").click(function () {
