@@ -309,26 +309,24 @@ body {
     content: url('./img/Vector25.png');
     position: absolute;
     right: -4%;
-    bottom: 37%;
+    bottom: 40%;
 }
-/* .info-users__item::before {
+.info-users__icon-1-1 {
     content: '';
     position: absolute;
     right: -26px;
-    bottom: 15px;
+    bottom: 25px;
     width: 37px;
     height: 36px;
     background: #17BB30;
-    opacity: 0;
     border-radius: 10px 0 0 10px;
 }
-.info-users__item::after {
+.info-users__icon-2-2 {
     content: url('./img/Vector25.png');
     position: absolute;
     right: -4%;
-    bottom: 37%;
-    opacity: 0;
-} */
+    bottom: 40%;
+}
 .info-users__item:first-child {
     margin-top: 20px;
 }
@@ -345,7 +343,7 @@ body {
     padding: 15px 0;
     position: relative;
 }
-.info-users__item:nth-child(2n)::before {
+/* .info-users__item:nth-child(2n)::before {
     content: '';
     position: absolute;
     right: -26px;
@@ -362,7 +360,7 @@ body {
     right: -4%;
     bottom: 37%;
     opacity: 0;
-}
+} */
 .info-users__photo {
     padding-right: 20px;
 }
