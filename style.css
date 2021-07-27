@@ -1030,25 +1030,75 @@ input:checked + .slider:before {
     left: 0;
     top: 1px;
 }
-/* #modal-big__btn-1 {
+.modal-big__btn-1 {
     position: relative;
 }
-#modal-big__btn-1::before {
+.modal-big__btn-2 {
+    position: relative;
+}
+.modal-big__btn-3 {
+    position: relative;
+}
+.modal-big__btn-1::after {
     content: '';
-    left: 0;
-    bottom: -10px;
     position: absolute;
-    height: 0;
-    width: 120px;
-    border-bottom: 120px solid #ec3504;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-} */
-
-
-
-
-
+    bottom: -11px;
+    left: -25px;
+    z-index: 0;
+    width: 144px;
+    height: 15px;
+    background: url(img/menu-bg.svg) center center no-repeat;
+    opacity: 0;
+}
+.modal-big__btn-2::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: -25px;
+    z-index: 0;
+    width: 144px;
+    height: 15px;
+    background: url(img/menu-bg.svg) center center no-repeat;
+    opacity: 0;
+}
+.modal-big__btn-3::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: -25px;
+    z-index: 0;
+    width: 144px;
+    height: 15px;
+    background: url(img/menu-bg.svg) center center no-repeat;
+    opacity: 0;
+}
+.modal-big__btn-1.active {
+    border-radius: 10px 10px 0 0 !important;
+}
+.modal-big__btn-1.active::after {
+    opacity: 1;
+}
+.modal-big__btn-2.active {
+    border-radius: 10px 10px 0 0 !important;
+}
+.modal-big__btn-2.active::after {
+    opacity: 1;
+}
+.modal-big__btn-3.active {
+    border-radius: 10px 10px 0 0 !important;
+}
+.modal-big__btn-3.active::after {
+    opacity: 1;
+}
+.modal-big__btn-text-1 {
+    display: block;
+}
+.modal-big__btn-text-2 {
+    display: none;
+}
+.modal-big__btn-text-3 {
+    display: none;
+}
 
 
 

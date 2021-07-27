@@ -1,10 +1,10 @@
-// $("#user-1").click(function () {
-//     if ($(".info-users__right-items").hasClass("open")) {
-//         $(".info-users__right-items").removeClass("open");
-//     } else {
-//         $(".info-users__right-items").addClass("open");
-//     }
-// });
+$("#user-1").click(function () {
+    if ($(".info-users__right-items").hasClass("open")) {
+        $(".info-users__right-items").removeClass("open");
+    } else {
+        $(".info-users__right-items").addClass("open");
+    }
+});
 $("#user-2").click(function () {
     if ($(".info-users__right-items").hasClass("open")) {
         $(".info-users__right-items").removeClass("open");
@@ -64,11 +64,33 @@ $(".modal-big__cloce").click(function () {
     $(".modal-small").removeClass("open")
 })
 
-
-$(document).ready(function(){
-    $('.navigation a').each(function () {
+$('.navigation a').each(function () {
     if (this.href == location.href) $(this).addClass('active');
-    });
 });
 
+$(".modal-big__btn-1").addClass("active");
 
+$(".modal-big__btn-2").click(function () {
+    $(this).addClass("active")
+    $(".modal-big__btn-1").removeClass("active")
+    $(".modal-big__btn-3").removeClass("active")
+    $(".modal-big__btn-text-2").css({'display' : 'block'})
+    $(".modal-big__btn-text-1").css({'display' : 'none'})
+    $(".modal-big__btn-text-3").css({'display' : 'none'})
+})
+$(".modal-big__btn-1").click(function () {
+    $(this).addClass("active")
+    $(".modal-big__btn-2").removeClass("active")
+    $(".modal-big__btn-3").removeClass("active")
+    $(".modal-big__btn-text-2").css({'display' : 'none'})
+    $(".modal-big__btn-text-1").css({'display' : 'block'})
+    $(".modal-big__btn-text-3").css({'display' : 'none'})
+})
+$(".modal-big__btn-3").click(function () {
+    $(this).addClass("active")
+    $(".modal-big__btn-1").removeClass("active")
+    $(".modal-big__btn-2").removeClass("active")
+    $(".modal-big__btn-text-2").css({'display' : 'none'})
+    $(".modal-big__btn-text-1").css({'display' : 'none'})
+    $(".modal-big__btn-text-3").css({'display' : 'block'})
+})
