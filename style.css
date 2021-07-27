@@ -143,7 +143,7 @@ body {
     bottom: -50%;
     border-radius: 50%;
 }
-#habarovsk-marker {
+#khabarovsk-marker {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -152,7 +152,7 @@ body {
     right: 16%;
     bottom: 26%;
 }
-#habarovsk-marker::before {
+#khabarovsk-marker::before {
     content: '';
     position: absolute;
     width: 40px;
@@ -222,7 +222,7 @@ body {
     z-index: 5;
     cursor: pointer;
 }
-#habarovsk {
+#khabarovsk {
     position: absolute;
     right: 12.7%;
     bottom: 28%;
@@ -497,7 +497,6 @@ input:checked + .slider:before {
     transform: translate(-50%, -50%);
     z-index: 99;
     box-shadow: 16px 13px 20px 2px rgba(0, 0, 0, 0.25);
-    display: none;
 }
 .modal-small__name-city {
     display: flex;
@@ -635,7 +634,33 @@ input:checked + .slider:before {
     top: 5%; 
     cursor: pointer;
 }
-.modal-small__next {
+.modal-small__next-krasnodar {
+    position: absolute;
+    right: 8%;
+    top: 44%;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.modal-small__next-khabarovsk {
+    position: absolute;
+    right: 8%;
+    top: 44%;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.modal-small__next-vladivostok {
     position: absolute;
     right: 8%;
     top: 44%;
@@ -655,7 +680,6 @@ input:checked + .slider:before {
     transform: translate(-50%, -50%);
     z-index: 99;
     box-shadow: 16px 13px 20px 2px rgba(0, 0, 0, 0.25);
-    display: none;
 }
 .name-city__data-blue {
     padding-top: 15px;
@@ -723,7 +747,6 @@ input:checked + .slider:before {
     transform: translate(-50%, -50%);
     z-index: 99;
     box-shadow: 16px 13px 20px 2px rgba(0, 0, 0, 0.25);
-    display: none;
 }
 .name-city__data-orang {
     padding-top: 15px;
@@ -924,6 +947,62 @@ input:checked + .slider:before {
     padding-bottom: 10px;
     background: #F76908;
 }
+
+
+
+
+
+#modal-small__vladivostok {
+    display: none;
+}
+#modal-small__krasnodar {
+    display: none;
+}
+#modal-small__khabarovsk {
+    display: none;
+}
+
+.info-users__right-items.open {
+    opacity: 1;
+}
+#modal-small__vladivostok.open {
+    display: block !important;
+}
+#modal-small__krasnodar.open {
+    display: block !important;
+}
+#modal-small__khabarovsk.open {
+    display: block !important;
+}
+
+#modal-big__vladivostok {
+    display: none;
+}
+#modal-big__krasnodar {
+    display: none;
+}
+#modal-big__khabarovsk {
+    display: none;
+}
+#modal-big__vladivostok.open {
+    display: block !important;
+}
+#modal-big__krasnodar.open {
+    display: block !important;
+}
+#modal-big__khabarovsk.open {
+    display: block !important;
+}
+.modal-small.open {
+    display: block;
+}
+
+
+
+
+
+
+
 
 
 input[type="search"]::-webkit-search-decoration,
