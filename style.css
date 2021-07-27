@@ -59,6 +59,23 @@ body {
     display: flex;
     justify-content: center;
 }
+.navigation {
+    position: relative;
+}
+.navigation a::before {
+    width: 0;
+    height: 5px;
+    left: 50%;
+    bottom: -58px;
+    right: auto;
+    background: #007FFA;
+    position: absolute;
+    content: "";
+    transform: translate(-50%);
+}
+.navigation a.active::before {
+    width: 165px !important;
+}
 .header__years ul {
     display: flex;
 }
@@ -259,7 +276,7 @@ body {
 .info-users__left-items {
     display: flex;
     flex-direction: column;
-    width: 395px;
+    width: 440px;
     background: var(--white);
 }
 .info-users__item {
@@ -543,8 +560,7 @@ input:checked + .slider:before {
 }
 .name-city__data div:last-child {
     border-radius: 10px;
-    background: #4DC466;
-    /* opacity: 0.2; */
+    background: url(./img/Rectangle99.png);
 }
 .name-city__data div:last-child span {
     position: relative;
@@ -569,9 +585,9 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 .name-city__data div:last-child span::after {
-    content: url('./img/Group2.png');
+    content: url('./img/user.png');
     position: absolute;
-    left: 6px;
+    left: 8px;
     bottom: 4px;
 }
 .modal-small__user-text {
@@ -700,8 +716,7 @@ input:checked + .slider:before {
 }
 .name-city__data-blue div:last-child {
     border-radius: 10px;
-    background: #4DC466;
-    /* opacity: 0.2; */
+    background: url(./img/Rectangle99.png);
 }
 .name-city__data-blue div:last-child span {
     position: relative;
@@ -726,9 +741,9 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 .name-city__data-blue div:last-child span::after {
-    content: url('./img/Group2.png');
+    content: url('./img/user.png');
     position: absolute;
-    left: 6px;
+    left: 8px;
     bottom: 4px;
 }
 .modal-small__user-text-blue {
@@ -767,8 +782,7 @@ input:checked + .slider:before {
 }
 .name-city__data-orang div:last-child {
     border-radius: 10px;
-    background: #4DC466;
-    /* opacity: 0.2; */
+    background: url(./img/Rectangle99.png);
 }
 .name-city__data-orang div:last-child span {
     position: relative;
@@ -793,9 +807,9 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 .name-city__data-orang div:last-child span::after {
-    content: url('./img/Group2.png');
+    content: url('./img/user.png');
     position: absolute;
-    left: 6px;
+    left: 8px;
     bottom: 4px;
 }
 .modal-small__user-text-orang {
@@ -996,7 +1010,40 @@ input:checked + .slider:before {
 .modal-small.open {
     display: block;
 }
-
+#options-left__daytime {
+    padding-left: 20px;
+    position: relative;
+}
+#options-left__daytime::before {
+    content: url('./img/user.png');
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+#options-left__distance {
+    padding-left: 20px;
+    position: relative;
+}
+#options-left__distance::before {
+    content: url('./img/OYrS05.tif.png');
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+/* #modal-big__btn-1 {
+    position: relative;
+}
+#modal-big__btn-1::before {
+    content: '';
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    height: 0;
+    width: 120px;
+    border-bottom: 120px solid #ec3504;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+} */
 
 
 

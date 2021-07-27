@@ -1,10 +1,10 @@
-$("#user-1").click(function () {
-    if ($(".info-users__right-items").hasClass("open")) {
-        $(".info-users__right-items").removeClass("open");
-    } else {
-        $(".info-users__right-items").addClass("open");
-    }
-});
+// $("#user-1").click(function () {
+//     if ($(".info-users__right-items").hasClass("open")) {
+//         $(".info-users__right-items").removeClass("open");
+//     } else {
+//         $(".info-users__right-items").addClass("open");
+//     }
+// });
 $("#user-2").click(function () {
     if ($(".info-users__right-items").hasClass("open")) {
         $(".info-users__right-items").removeClass("open");
@@ -65,12 +65,10 @@ $(".modal-big__cloce").click(function () {
 })
 
 
+$(document).ready(function(){
+    $('.navigation a').each(function () {
+    if (this.href == location.href) $(this).addClass('active');
+    });
+});
 
 
-
-
-
-// $("#user-1").click(function () {
-//     $(this).toggleClass("open");
-//     $(".info-users__right-items").toggleClass("open");
-// });
