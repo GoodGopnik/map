@@ -1,23 +1,11 @@
-$("#user-1").click(function () {
-    if ($(".info-users__right-items").hasClass("open")) {
-        $(".info-users__right-items").removeClass("open");
-    } else {
-        $(".info-users__right-items").addClass("open");
-    }
+$(".user-1").click(function () {
+    $(".info-users__right-items").toggleClass("active")
 });
-$("#user-2").click(function () {
-    if ($(".info-users__right-items").hasClass("open")) {
-        $(".info-users__right-items").removeClass("open");
-    } else {
-        $(".info-users__right-items").addClass("open");
-    }
+$(".user-2").click(function () {
+    $(".info-users__right-items").toggleClass("active")
 });
-$("#user-3").click(function () {
-    if ($(".info-users__right-items").hasClass("open")) {
-        $(".info-users__right-items").removeClass("open");
-    } else {
-        $(".info-users__right-items").addClass("open");
-    }
+$(".user-3").click(function () {
+    $(".info-users__right-items").toggleClass("active")
 });
 
 $("#vladivostok").click(function () {
